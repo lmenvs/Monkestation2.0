@@ -1767,8 +1767,33 @@
 	name = "Cat"
 	icon = 'icons/mob/species/human/cat_features.dmi'
 	icon_state = "default"
-	color_src = HAIR
+	color_src = ANIME
 
+//Monkestation edit: add anime trait
+/datum/sprite_accessory/tails/human/fox
+	name = "Fox"
+	icon = 'monkestation/icons/mob/species/quirks/anime_features.dmi'
+	icon_state = "fox_tail"
+	color_src = ANIME
+
+/datum/sprite_accessory/tails/human/shark
+	name = "Shark"
+	icon = 'monkestation/icons/mob/species/quirks/anime_features.dmi'
+	icon_state = "shark"
+	color_src = ANIME
+
+/datum/sprite_accessory/tails/human/wolf
+	name = "Wolf"
+	icon = 'monkestation/icons/mob/species/quirks/anime_features.dmi'
+	icon_state = "wolf"
+	color_src = ANIME
+
+/datum/sprite_accessory/tails/human/xeno
+	name = "Xeno"
+	icon = 'monkestation/icons/mob/species/quirks/anime_features.dmi' //no, this will not be an anime feature.
+	icon_state = "xeno"
+
+//monkestation edit end
 /datum/sprite_accessory/tails/monkey
 	name = "Monkey"
 	icon = 'icons/mob/species/monkey/monkey_tail.dmi'
@@ -1879,14 +1904,14 @@
 	name = "Cat"
 	icon_state = "cat"
 	hasinner = TRUE
-	color_src = HAIR
+	color_src = ANIME
 
 /datum/sprite_accessory/ears/fox
 	icon = 'icons/mob/species/human/fox_features.dmi'
 	name = "Fox"
 	icon_state = "fox"
 	hasinner = TRUE
-	color_src = HAIR
+	color_src = ANIME
 	locked = TRUE
 
 /datum/sprite_accessory/wings/none

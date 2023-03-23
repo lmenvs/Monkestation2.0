@@ -458,6 +458,7 @@
 #include "code\_globalvars\lists\typecache.dm"
 #include "code\_globalvars\lists\wiremod.dm"
 #include "code\_globalvars\lists\xenobiology.dm"
+#include "code\_globalvars\~monkestation\animeimplants.dm"
 #include "code\_js\byjax.dm"
 #include "code\_js\menus.dm"
 #include "code\_onclick\adjacent.dm"
@@ -5125,4 +5126,7 @@
 #include "interface\menu.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "monkestation\code\datums\quirks\neutral_quirks.dm"
+#include "monkestation\code\modules\client\preferences\anime.dm"
+#include "monkestation\code\modules\surgery\organs\external\tails.dm"
 // END_INCLUDE

@@ -748,6 +748,10 @@ GLOBAL_LIST_EMPTY(features_by_species)
 								accessory_overlay.color = fixed_mut_color
 							else
 								accessory_overlay.color = source.hair_color
+						//monkestation edit: add anime quirk
+						if(ANIME)
+							accessory_overlay.color = source.anime_color
+						//monkestation edit end
 						if(FACEHAIR)
 							accessory_overlay.color = source.facial_hair_color
 						if(EYECOLOR)

@@ -39,6 +39,9 @@
 
 	var/age = 30 //Player's age
 
+	var/anime_type = null //monkestation edit: add anime quirk
+	var/anime_color = "#000000" //monkestation edit: add anime quirk
+
 	//consider updating /mob/living/carbon/human/copy_clothing_prefs() if adding more of these
 	var/underwear = "Nude" //Which underwear the player wants
 	var/underwear_color = "#000000"
