@@ -10,7 +10,6 @@
 	production = 4
 	yield = 6
 	endurance = 25
-	instability = 10
 	growthstages = 3
 	weed_chance = 3
 	growing_icon = 'icons/obj/hydroponics/growing_vegetables.dmi'
@@ -58,11 +57,10 @@
 	return ..()
 
 /obj/item/food/onion_slice
-	name = "onion slices"
-	desc = "Rings, not for wearing."
+	name = "onion slice"
+	desc = "Ring, not for wearing."
 	icon_state = "onionslice"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 2)
-	gender = PLURAL
 	w_class = WEIGHT_CLASS_TINY
 
 /obj/item/food/onion_slice/make_bakeable()
@@ -72,7 +70,7 @@
 	AddElement(/datum/element/microwavable, /obj/item/food/onionrings)
 
 /obj/item/food/onion_slice/red
-	name = "red onion slices"
-	desc = "They shine like exceptionally low quality amethyst."
+	name = "red onion slice"
+	desc = "It shines like an exceptionally low quality amethyst."
 	icon_state = "onionslice_red"
 	food_reagents = list(/datum/reagent/consumable/nutriment = 5, /datum/reagent/consumable/nutriment/vitamin = 2, /datum/reagent/consumable/tearjuice = 2.5)

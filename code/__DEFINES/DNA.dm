@@ -73,7 +73,8 @@
 #define NO_UNDERWEAR 9
 #define NO_DNA_COPY 10
 #define DRINKSBLOOD 11
-#define ANIME 12 //monkestation edit: add anime trait
+#define SKINTONES 12
+#define ANIME 13 //monkestation edit: add anime trait
 
 /// Use this if you want to change the race's color without the player being able to pick their own color. AKA special color shifting
 #define DYNCOLORS 12
@@ -88,6 +89,10 @@
 #define NOAUGMENTS 17
 ///will be assigned a universal vampire themed last name shared by their department. this is preferenced!
 #define BLOOD_CLANS 18
+
+#define REVIVESBYHEALING 19
+#define NOHUSK 20
+#define NOMOUTH 21
 
 //organ slots
 #define ORGAN_SLOT_ADAMANTINE_RESONATOR "adamantine_resonator"
@@ -113,6 +118,7 @@
 #define ORGAN_SLOT_TONGUE "tongue"
 #define ORGAN_SLOT_VOICE "vocal_cords"
 #define ORGAN_SLOT_ZOMBIE "zombie_infection"
+#define ORGAN_SLOT_BUTT "butt"
 
 /// Organ slot external
 #define ORGAN_SLOT_EXTERNAL_TAIL "tail"

@@ -13,13 +13,11 @@
 	maturation = 3
 	production = 5
 	yield = 4
-	instability = 10
 	growthstages = 1
 	growing_icon = 'icons/obj/hydroponics/growing_vegetables.dmi'
 	genes = list(/datum/plant_gene/trait/repeated_harvest)
 	mutatelist = list(/obj/item/seeds/replicapod)
 	reagents_add = list(/datum/reagent/consumable/nutriment/vitamin = 0.04, /datum/reagent/consumable/nutriment = 0.1)
-	seed_flags = null
 
 /obj/item/food/grown/cabbage
 	seed = /obj/item/seeds/cabbage
@@ -43,7 +41,6 @@
 	maturation = 10
 	production = 1
 	yield = 1 //seeds if there isn't a dna inside
-	instability = 15 //allows it to gain reagent genes from nearby plants
 	potency = 30
 	var/volume = 5
 	var/ckey
@@ -136,12 +133,12 @@
 						make_podman = TRUE
 						break
 				else
-					if(M.ckey == ckey && M.stat == DEAD && !M.suiciding)
+					if(M.ckey == ckey && M.stat == DEAD && !HAS_TRAIT(M, TRAIT_SUICIDED))
 						make_podman = TRUE
 						break
 		else //If the player has ghosted from his corpse before blood was drawn, his ckey is no longer attached to the mob, so we need to match up the cloned player through the mind key
 			for(var/mob/M in GLOB.player_list)
-				if(mind && M.mind && ckey(M.mind.key) == ckey(mind.key) && M.ckey && M.client && M.stat == DEAD && !M.suiciding)
+				if(mind && M.mind && ckey(M.mind.key) == ckey(mind.key) && M.ckey && M.client && M.stat == DEAD && !HAS_TRAIT(M, TRAIT_SUICIDED))
 					if(isobserver(M))
 						var/mob/dead/observer/O = M
 						if(!O.can_reenter_corpse)

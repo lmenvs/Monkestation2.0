@@ -159,7 +159,7 @@ SUBSYSTEM_DEF(id_access)
 			"pdas" = list(),
 		),
 		"[ACCESS_HOP]" = list(
-			"regions" = list(REGION_GENERAL, REGION_SUPPLY),
+			"regions" = list(REGION_GENERAL),
 			"head" = JOB_HEAD_OF_PERSONNEL,
 			"templates" = list(),
 			"pdas" = list(),
@@ -185,12 +185,6 @@ SUBSYSTEM_DEF(id_access)
 		"[ACCESS_CE]" = list(
 			"regions" = list(REGION_ENGINEERING),
 			"head" = JOB_CHIEF_ENGINEER,
-			"templates" = list(),
-			"pdas" = list(),
-		),
-		"[ACCESS_QM]" = list(
-			"regions" = list(REGION_SUPPLY),
-			"head" = JOB_QUARTERMASTER,
 			"templates" = list(),
 			"pdas" = list(),
 		),

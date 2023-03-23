@@ -1,6 +1,10 @@
 GLOBAL_LIST_EMPTY(dead_players_during_shift)
 /mob/living/carbon/human/gib_animation()
-	new /obj/effect/temp_visual/gib_animation(loc, dna.species.gib_anim)
+	switch(dna.species.species_gibs)
+		if(GIB_TYPE_HUMAN)
+			new /obj/effect/temp_visual/gib_animation(loc, "gibbed-h")
+		if(GIB_TYPE_ROBOTIC)
+			new /obj/effect/temp_visual/gib_animation(loc, "gibbed-r")
 
 /mob/living/carbon/human/dust_animation()
 	new /obj/effect/temp_visual/dust_animation(loc, dna.species.dust_anim)
@@ -27,7 +31,7 @@ GLOBAL_LIST_EMPTY(dead_players_during_shift)
 
 	. = ..()
 
-	if(client && !suiciding && !(client in GLOB.dead_players_during_shift))
+	if(client && !HAS_TRAIT(src, TRAIT_SUICIDED) && !(client in GLOB.dead_players_during_shift))
 		GLOB.dead_players_during_shift += client
 
 	if(!QDELETED(dna)) //The gibbed param is bit redundant here since dna won't exist at this point if they got deleted.

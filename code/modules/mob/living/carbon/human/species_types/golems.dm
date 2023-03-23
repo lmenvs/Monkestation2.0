@@ -823,14 +823,6 @@
 /datum/species/golem/cloth/get_species_description()
 	return "A wrapped up Mummy! They descend upon Space Station Thirteen every year to spook the crew! \"Return the slab!\""
 
-/datum/species/golem/cloth/get_species_lore()
-	return list(
-		"Mummies are very self conscious. They're shaped weird, they walk slow, and worst of all, \
-		they're considered the laziest halloween costume. But that's not even true, they say.",
-
-		"Making a mummy costume may be easy, but making a CONVINCING mummy costume requires \
-		things like proper fabric and purposeful staining to achieve the look. Which is FAR from easy. Gosh.",
-	)
 
 // Calls parent, as Golems have a species-wide perk we care about.
 /datum/species/golem/cloth/create_pref_unique_perks()
@@ -907,7 +899,7 @@
 /obj/structure/cloth_pile/proc/revive()
 	if(QDELETED(src) || QDELETED(cloth_golem)) //QDELETED also checks for null, so if no cloth golem is set this won't runtime
 		return
-	if(cloth_golem.suiciding)
+	if(HAS_TRAIT_FROM_ONLY(cloth_golem, TRAIT_SUICIDED, REF(cloth_golem)))
 		QDEL_NULL(cloth_golem)
 		return
 
