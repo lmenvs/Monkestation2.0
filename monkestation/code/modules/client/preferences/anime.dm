@@ -13,7 +13,11 @@
 	return "Anime" in preferences.all_quirks
 
 /datum/preference/choiced/anime/apply_to_human(mob/living/carbon/human/target, value)
-	target.anime_type = value
+	for(var/obj/item/organ/insertable in GLOB.anime_organs[value])
+		if(typecacheof(/obj/item/organ/external/tail))
+			target.dna.features["tail_human"] = value
+		if(typecacheof(/obj/item/organ/external/cranial))
+			target.dna.features["head_implant"] = value
 	target.update_body_parts()
 
 /datum/preference/choiced/anime_color/compile_constant_data()

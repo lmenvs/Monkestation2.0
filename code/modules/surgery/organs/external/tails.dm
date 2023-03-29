@@ -84,7 +84,6 @@
 
 /obj/item/organ/external/tail/cat
 	name = "tail"
-	preference = "feature_human_tail"
 
 	bodypart_overlay = /datum/bodypart_overlay/mutant/tail/cat
 
@@ -92,7 +91,7 @@
 
 ///Cat tail bodypart overlay
 /datum/bodypart_overlay/mutant/tail/cat
-	feature_key = "tail_cat"
+	feature_key = "tail_human"
 	color_source = ORGAN_COLOR_ANIME //monkestation edit - add anime trait
 
 /datum/bodypart_overlay/mutant/tail/cat/get_global_feature_list()

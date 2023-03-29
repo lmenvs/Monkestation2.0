@@ -1773,7 +1773,7 @@
 /datum/sprite_accessory/tails/human/fox
 	name = "Fox"
 	icon = 'monkestation/icons/mob/species/quirks/anime_features.dmi'
-	icon_state = "fox_tail"
+	icon_state = "fox"
 	color_src = ANIME
 
 /datum/sprite_accessory/tails/human/shark

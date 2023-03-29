@@ -3,6 +3,10 @@
 	///Sprite datum we use to draw on the bodypart
 	var/datum/sprite_accessory/sprite_datum
 
+	///If we don't want it to draw from features -- note, if you are making any sprites that do not draw from features, you will
+	///have to assign the correct sprite accessory.
+	var/draw_from_features = TRUE
+
 	///Defines what kind of 'organ' we're looking at. Sprites have names like 'm_mothwings_firemoth_ADJ'. 'mothwings' would then be feature_key
 	var/feature_key = ""
 
@@ -25,7 +29,8 @@
 
 ///Grab a random sprite
 /datum/bodypart_overlay/mutant/proc/randomize_sprite()
-	sprite_datum = get_random_appearance()
+	if(draw_from_features)
+		sprite_datum = get_random_appearance()
 
 ///Grab a random appearance datum (thats not locked)
 /datum/bodypart_overlay/mutant/proc/get_random_appearance()
@@ -72,12 +77,14 @@
 
 ///Change our accessory sprite, using the accesssory type. If you need to change the sprite for something, use simple_change_sprite()
 /datum/bodypart_overlay/mutant/set_appearance(accessory_type)
-	sprite_datum = fetch_sprite_datum(accessory_type)
+	if(draw_from_features)
+		sprite_datum = fetch_sprite_datum(accessory_type)
 	cache_key = jointext(generate_icon_cache(), "_")
 
 ///In a lot of cases, appearances are stored in DNA as the Name, instead of the path. Use set_appearance instead of possible
 /datum/bodypart_overlay/mutant/proc/set_appearance_from_name(accessory_name)
-	sprite_datum = fetch_sprite_datum_from_name(accessory_name)
+	if(draw_from_features)
+		sprite_datum = fetch_sprite_datum_from_name(accessory_name)
 	cache_key = jointext(generate_icon_cache(), "_")
 
 ///Generate a unique key based on our sprites. So that if we've aleady drawn these sprites, they can be found in the cache and wont have to be drawn again (blessing and curse, but mostly curse)
@@ -121,12 +128,16 @@
 
 ///Sprite accessories are singletons, stored list("Big Snout" = instance of /datum/sprite_accessory/snout/big), so here we get that singleton
 /datum/bodypart_overlay/mutant/proc/fetch_sprite_datum(datum/sprite_accessory/accessory_path)
+	if(!draw_from_features)
+		return
 	var/list/feature_list = get_global_feature_list()
 
 	return feature_list[initial(accessory_path.name)]
 
 ///Get the singleton from the sprite name
 /datum/bodypart_overlay/mutant/proc/fetch_sprite_datum_from_name(accessory_name)
+	if(!draw_from_features)
+		return
 	var/list/feature_list = get_global_feature_list()
 
 	return feature_list[accessory_name]

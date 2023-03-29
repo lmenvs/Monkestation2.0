@@ -5261,9 +5261,9 @@
 #include "monkestation\code\modules\surgery\bodyparts\oozeling_bodyparts.dm"
 #include "monkestation\code\modules\surgery\bodyparts\simian_bodyparts.dm"
 #include "monkestation\code\modules\surgery\organs\augments.dm"
+#include "monkestation\code\modules\surgery\organs\external\anime.dm"
 #include "monkestation\code\modules\surgery\organs\external\ipc.dm"
 #include "monkestation\code\modules\surgery\organs\external\simian.dm"
-#include "monkestation\code\modules\surgery\organs\external\tails.dm"
 #include "monkestation\code\modules\surgery\organs\internal\butts.dm"
 #include "monkestation\code\modules\surgery\organs\internal\ipc.dm"
 // END_INCLUDE
