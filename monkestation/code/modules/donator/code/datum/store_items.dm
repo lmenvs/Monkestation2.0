@@ -52,6 +52,10 @@
 	item_path = /obj/item/clothing/head/costume/dark_hos
 	item_cost = 4000
 
+/datum/store_item/toys/seam_plush
+	name = "Seam Plush"
+	item_path = /obj/item/toy/plush/seam
+	item_cost = 3000
 
 //sammi
 /datum/store_item/toys/puck_plush

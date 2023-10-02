@@ -78,6 +78,10 @@
 	item_path = /obj/item/clothing/head/costume/dark_hos
 	donator_only = TRUE
 
+/datum/loadout_item/toys/seam_plush
+	name = "Puck Plush"
+	item_path = /obj/item/toy/plush/seam
+	donator_only = TRUE
 
 //sammi
 /datum/loadout_item/toys/puck_plush

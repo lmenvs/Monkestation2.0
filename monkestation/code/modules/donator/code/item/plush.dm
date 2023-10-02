@@ -24,3 +24,9 @@
 	icon = 'monkestation/code/modules/donator/icons/obj/plushes.dmi'
 	squeak_override = list('monkestation/code/modules/donator/sounds/puck.ogg'=1)
 	icon_state = "puck"
+
+/obj/item/toy/plush/seam
+	name = "seam plush"
+	desc = "A worn, well-loved plush of a old cat. ~Handcrafted lovingly for Riddler."
+	icon = 'monkestation/code/modules/donator/icons/obj/plushes.dmi'
+	icon_state = "seam"
