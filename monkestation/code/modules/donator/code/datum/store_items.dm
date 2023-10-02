@@ -26,7 +26,7 @@
 
 //spinnermaster
 /datum/store_item/suit/shark_costume
-	name = "Blahja Costume"
+	name = "Blahaj Costume"
 	item_path = /obj/item/clothing/suit/hooded/shark_costume
 	item_cost = 8000
 
@@ -39,4 +39,30 @@
 /datum/store_item/under/miscellaneous/syndie_pajamas
 	name = "Syndie Pajamas"
 	item_path = /obj/item/clothing/under/costume/syndie_pajamas
+	item_cost = 4000
+
+//riddler
+/datum/store_item/suit/dark_hos
+	name = "Dark HoS Trenchcoat"
+	item_path = /obj/item/clothing/suit/costume/dark_hos
+	item_cost = 7000 //you gotta pay for coolness
+
+/datum/store_item/head/cirno
+	name = "Dark HoS Hat"
+	item_path = /obj/item/clothing/head/costume/dark_hos
+	item_cost = 4000
+
+
+//sammi
+/datum/store_item/toys/puck_plush
+	name = "Puck Plush"
+	item_path = /obj/item/toy/plush/puck
+	item_cost = 3000
+
+
+//ADHDBirb
+
+/datum/store_item/suit/cirno_outfit
+	name = "Lemon Assault Vest"
+	item_path = /obj/item/clothing/suit/jacket/bomber/lemon
 	item_cost = 4000
