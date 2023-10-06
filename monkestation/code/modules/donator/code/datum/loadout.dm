@@ -96,3 +96,10 @@
 	name = "Lemon Assault Vest"
 	item_path = /obj/item/clothing/suit/jacket/bomber/lemon
 	donator_only = TRUE
+
+
+//Random
+/datum/loadout_item/toys/spider_plush
+	name = "Spider Plush"
+	item_path = /obj/item/toy/plush/spider
+	donator_only = TRUE

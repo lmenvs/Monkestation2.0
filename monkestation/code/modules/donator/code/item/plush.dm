@@ -30,3 +30,10 @@
 	desc = "A worn, well-loved plush of a old cat. ~Handcrafted lovingly for Riddler."
 	icon = 'monkestation/code/modules/donator/icons/obj/plushes.dmi'
 	icon_state = "seam"
+
+/obj/item/toy/plush/spider
+	name = "spider plush"
+	desc = "A plush of a baby spider. ~Handcrafted lovingly for Random."
+	icon = 'monkestation/code/modules/donator/icons/obj/plushes.dmi'
+	squeak_override = list('goon/sounds/babynoise.ogg'=1)
+	icon_state = "spider"
