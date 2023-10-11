@@ -6006,7 +6006,8 @@
 	id = "kitchen";
 	name = "Kitchen Shutter Control";
 	req_access = list("kitchen");
-	pixel_y = -8
+	pixel_y = -8;
+	pixel_x = -5
 	},
 /turf/closed/wall,
 /area/station/service/kitchen)
@@ -20062,10 +20063,6 @@
 /obj/item/holosign_creator/robot_seat/bar{
 	pixel_x = 6
 	},
-/obj/machinery/light_switch/directional/west{
-	pixel_y = 26
-	},
-/obj/machinery/requests_console/directional/north,
 /turf/open/floor/carpet,
 /area/station/service/bar)
 "kqx" = (
@@ -23659,6 +23656,9 @@
 /area/station/maintenance/starboard/central)
 "mdi" = (
 /obj/structure/curtain/cloth/fancy,
+/obj/machinery/light_switch/directional/north{
+	pixel_x = 9
+	},
 /turf/open/floor/iron/kitchen,
 /area/station/service/kitchen)
 "mdl" = (
@@ -27416,6 +27416,7 @@
 	pixel_x = -1
 	},
 /obj/structure/table,
+/obj/machinery/requests_console/directional/north,
 /turf/open/floor/carpet,
 /area/station/service/bar)
 "nVh" = (
@@ -30830,6 +30831,15 @@
 	},
 /turf/open/floor/plating,
 /area/station/cargo/warehouse)
+"pIK" = (
+/obj/effect/turf_decal/siding/wood{
+	dir = 1
+	},
+/obj/machinery/smartfridge/drinks{
+	icon_state = "boozeomat"
+	},
+/turf/open/floor/carpet,
+/area/station/service/bar)
 "pIL" = (
 /turf/open/floor/carpet,
 /area/station/service/bar)
@@ -40767,9 +40777,7 @@
 /turf/open/floor/iron/dark,
 /area/station/engineering/atmos)
 "uHW" = (
-/obj/machinery/smartfridge/drinks{
-	icon_state = "boozeomat"
-	},
+/obj/machinery/vending/boozeomat,
 /turf/open/floor/carpet,
 /area/station/service/bar)
 "uIg" = (
@@ -64227,7 +64235,7 @@ ddU
 lzc
 nJU
 aVb
-eFd
+pIK
 kpQ
 pIL
 pIL
