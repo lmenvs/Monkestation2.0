@@ -16,7 +16,7 @@
 	name = "Dummy Thicc"
 	desc = "Hm...Colonel, I'm trying to sneak around, but I'm dummy thicc and the clap of my ass cheeks keep alerting the guards..."
 	value = 3	//Why are we still here? Just to suffer?
-	icon = "bullhorn"
+	icon = "hands-clapping"
 
 /datum/quirk/dummy_thick/post_add()
 	. = ..()
