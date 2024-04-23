@@ -75,3 +75,8 @@
 	name = "Plant Crab"
 	default_name = "Plant Crab"
 	donator_pet = 	/mob/living/basic/crab/plant
+
+/obj/item/choice_beacon/pet/donator/quilava
+	name = "Quilava Maid"
+	default_name = "Quilava Maid"
+	donator_pet = 	/mob/living/basic/pet/quil_maid
