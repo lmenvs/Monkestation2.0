@@ -79,4 +79,4 @@
 /obj/item/choice_beacon/pet/donator/quilava
 	name = "Quilava Maid"
 	default_name = "Quilava Maid"
-	donator_pet = 	/mob/living/basic/pet/quil_maid
+	donator_pet = 	/mob/living/basic/pet/quilmaid
