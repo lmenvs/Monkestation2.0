@@ -340,7 +340,7 @@
 	requires_purchase = FALSE
 
 /datum/loadout_item/pocket_items/donator/quilava
-	name = "Pet Delivery Beacon - Quilava Maid"
+	name = "Pet Delivery Beacon - Quil Maid"
 	item_path = /obj/item/choice_beacon/pet/donator/quilava
 	donator_only = TRUE
 	requires_purchase = FALSE
@@ -348,7 +348,7 @@
 
 /datum/loadout_item/effects/quilava
 	ckeywhitelist = list("quilark")
-	name = "Quilava Maid Transformation"
+	name = "Quil Maid Transformation"
 	item_path = /obj/item/effect_granter/donator/quilava
 	requires_purchase = FALSE
 

@@ -137,8 +137,8 @@
 	gold_core_spawnable = NO_SPAWN
 
 /mob/living/basic/pet/quilmaid
-	name = "\improper Quilava Maid"
-	desc = "Someone dressed up this Pokemon in a maid outfit."
+	name = "\improper Quil' Maid"
+	desc = "Someone dressed up this Space-e-mon in a maid outfit."
 	icon = 'monkestation/code/modules/donator/icons/mob/pets.dmi'
 	icon_state = "quil_maid"
 	icon_living = "quil_maid"
