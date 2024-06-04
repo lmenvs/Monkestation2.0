@@ -18,6 +18,13 @@
 	requires_purchase = FALSE
 
 
+
+/datum/loadout_item/toys/charlie
+	name = "Charlie Plush"
+	item_path = /obj/item/toy/plush/charlie
+	donator_only = TRUE
+	requires_purchase = FALSE
+
 //bidlink
 
 /datum/loadout_item/suit/cirno_outfit
