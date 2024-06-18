@@ -211,7 +211,7 @@
 	icon = 'monkestation/code/modules/donator/icons/mob/pets.dmi'
 	icon_state = "orangutan"
 	icon_living = "orangutan"
-	icon_dead = "orangutan"
+	icon_dead = "orangutan_dead"
 	icon_gib = null
 	gold_core_spawnable = NO_SPAWN
 	ai_controller = /datum/ai_controller/basic_controller/

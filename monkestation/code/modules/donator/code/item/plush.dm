@@ -108,7 +108,7 @@
 	squeak_override = list('monkestation/code/modules/donator/sounds/charlie.ogg'=1)
 
 /obj/item/toy/plush/cowlephant
-	name = "cowlophant plush"
+	name = "cowlephant plush"
 	desc = "A plush of a Cowlephant ~Handcrafted lovingly for Raziaar"
 	icon = 'monkestation/code/modules/donator/icons/obj/plushes.dmi'
 	icon_state = "cowlephant"
