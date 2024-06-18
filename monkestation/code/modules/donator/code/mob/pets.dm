@@ -203,14 +203,17 @@
 	var/gumball_amount = 1
 
 /datum/action/cooldown/lay_gumball/Activate(atom/target)
-	. = ..()
-	var/list/reachable_turfs = list()
-	for(var/turf/adjacent_turf in RANGE_TURFS(1, owner.loc))
-		if(adjacent_turf == owner.loc || !owner.CanReach(adjacent_turf) || !isopenturf(adjacent_turf))
-			continue
-		reachable_turfs += adjacent_turf
 
-	var/gumballs_to_spawn = min(gumball_amount, reachable_turfs.len)
-	for(var/i in 1 to gumballs_to_spawn)
-		new gumball_type(pick_n_take(reachable_turfs))
-	StartCooldown()
+
+/mob/living/basic/pet/orangutan
+	name = "\improper Orangutan"
+	desc = "A vibrant colored primate once native to Indonesia"
+	icon = 'monkestation/code/modules/donator/icons/mob/pets.dmi'
+	icon_state = "orangutan"
+	icon_living = "orangutan"
+	icon_dead = "orangutan"
+	icon_gib = null
+	gold_core_spawnable = NO_SPAWN
+	ai_controller = /datum/ai_controller/basic_controller/
+
+	ckeywhitelist = list("Raziaar")
