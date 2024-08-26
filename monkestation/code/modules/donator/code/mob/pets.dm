@@ -244,7 +244,7 @@
 
 
 /mob/living/basic/pet/darkscug
-	name = "night slugcat
+	name = "night slugcat"
 	desc = "ITS A FUGGIN SCRUG"
 	icon = 'icons/mob/simple/slugcats.dmi'
 	icon_state = "scug_nightcat"
